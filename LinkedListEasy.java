@@ -1,7 +1,7 @@
-public class LinkedList {
+public class LinkedListEasy {
   Node head;
 
-  public LinkedList() {
+  public LinkedListEasy() {
     this.head = null;
   }
 

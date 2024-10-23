@@ -1,11 +1,11 @@
-public class Node {
+public class NodeEasy {
   String nama;
   String skill;
   int umur;
   String hobi;
-  Node next;
+  NodeEasy next;
 
-  public Node (String nama, String skill, int umur, String hobi) {
+  public NodeEasy (String nama, String skill, int umur, String hobi) {
     this.nama = nama;
     this.skill = skill;
     this.umur = umur;
