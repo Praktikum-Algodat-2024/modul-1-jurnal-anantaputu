@@ -1,6 +1,6 @@
 public class MainEasy {
   public static void main(String[] args) {
-    LinkedList list = new LinkedList();
+    LinkedListEasy list = new LinkedListEasy();
 
     list.addFirst("Vadel", "Dance Geter", 19, "Dance");
     list.addLast("Loli", "ATM Berjalan", 16, "Liat Vadel");

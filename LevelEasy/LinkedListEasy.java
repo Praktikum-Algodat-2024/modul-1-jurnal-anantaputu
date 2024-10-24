@@ -1,30 +1,30 @@
 public class LinkedListEasy {
-  Node head;
+  NodeEasy head;
 
   public LinkedListEasy() {
     this.head = null;
   }
 
   public void addFirst (String nama, String skill, int umur, String hobi) {
-    Node newNode = new Node(nama, skill, umur, hobi);
+    NodeEasy newNodeEasy = new NodeEasy(nama, skill, umur, hobi);
     if (head == null) {
-      head = newNode;
+      head = newNodeEasy;
     } else {
-      newNode.next = head;
-      head = newNode;
+      newNodeEasy.next = head;
+      head = newNodeEasy;
     }
   }
 
   public void addLast (String nama, String skill, int umur, String hobi) {
-    Node newNode = new Node(nama, skill, umur, hobi);
+    NodeEasy newNodeEasy = new NodeEasy(nama, skill, umur, hobi);
     if (head == null) {
-      head = newNode;
+      head = newNodeEasy;
     } else {
-      Node temp = head;
+      NodeEasy temp = head;
       while (temp.next != null) {
         temp = temp.next;
       }
-      temp.next = newNode;
+      temp.next = newNodeEasy;
     }
   }
 
@@ -40,7 +40,7 @@ public class LinkedListEasy {
     if (head == null) {
       System.out.println("DATA KOSONG");
     } else {
-      Node temp = head;
+      NodeEasy temp = head;
       while (temp.next.next != null) {
         temp = temp.next;
       }
@@ -49,7 +49,7 @@ public class LinkedListEasy {
   }
 
   public void display () {
-    Node temp = head;
+    NodeEasy temp = head;
       while (temp != null) {
         System.out.println("Nama  : " + temp.nama);
         System.out.println("Skill : " + temp.skill);
